@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yunus Uludag | Studerande till Javautvecklare</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar">
+        <a href="#home" class="logo">Yunus Uludag</a>
+        <button class="menu-toggle" aria-label="Öppna meny">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="#about">Om mig</a></li>
+            <li><a href="#education">Utbildning</a></li>
+            <li><a href="#skills">Kompetens</a></li>
+            <li><a href="#projects">Projekt</a></li>
+            <li><a href="#experience">Erfarenhet</a></li>
+            <li><a href="#cover-letter">Personligt brev</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero section">
+        <div class="hero-content">
+            <p class="eyebrow">Studerande till Javautvecklare</p>
+
+            <h1>Hej, jag heter <span>Yunus Uludag</span></h1>
+
+            <p class="lead">
+                Jag söker LIA och vill omsätta mina kunskaper i praktiska projekt
+                och verkliga utvecklingsmiljöer.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">Se projekt</a>
+                <a href="#contact" class="btn secondary">Kontakta mig</a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <img src="assets/profile.jpg" alt="Profilbild på Yunus Uludag"/>
+            <h2>Yunus Uludag</h2>
+            <p>Studerande till Javautvecklare</p>
+        </div>
+    </section>
+
+    <section id="about" class="section two-column">
+        <div>
+            <p class="section-label">Profil</p>
+            <h2>Om mig</h2>
+        </div>
+
+        <div class="text-card">
+            <p>
+                Studerar till Javautvecklare och söker möjlighet att praktiskt
+                utvecklas vidare inom programmering och systemutveckling.
+            </p>
+
+            <p>
+                Jag är nyfiken, engagerad och vill lära mig mer genom att arbeta i
+                verkliga projekt och teammiljöer.
+            </p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <p class="section-label">Utbildningar</p>
+        <h2>Utbildning</h2>
+
+        <div class="grid">
+            <article class="card">
+                <p class="date">2025 03 30 – Pågående</p>
+                <h3>Javautvecklare</h3>
+                <p>IT-Högskolan</p>
+
+                <ul>
+                    <li>Java-programmering</li>
+                    <li>Utveckling mot databaser</li>
+                    <li>Utveckling av webbapplikationer</li>
+                    <li>Javaverktyg och byggmiljöer</li>
+                    <li>Komplex Javautveckling</li>
+                    <li>Web services och integrationer</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <p class="date">2015 03 30 – 2015 05 08</p>
+                <h3>Totalvaktutbildning</h3>
+                <p>Väktarskolan</p>
+
+                <ul>
+                    <li>VU 1</li>
+                    <li>Expanderbar batong</li>
+                    <li>PYT (160 timmar)</li>
+                    <li>VU 2</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <p class="date">2009 – 2012</p>
+                <h3>Fordonsteknik</h3>
+                <p>STFG</p>
+
+                <ul>
+                    <li>Personbilsteknik</li>
+                    <li>MIG / MAG &amp; TIG svets</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <p class="section-label">Kompetens</p>
+        <h2>Kompetenser och språk</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>Tekniska kompetenser</h3>
+
+                <ul>
+                    <li>Java</li>
+                    <li>SQL</li>
+                    <li>Git/GitHub</li>
+                    <li>HTML/CSS</li>
+                    <li>REST API</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>Övriga kompetenser</h3>
+
+                <ul>
+                    <li>Problemlösning</li>
+                    <li>Samarbetsförmåga</li>
+                    <li>Snabblärd</li>
+                    <li>Noggrann</li>
+                    <li>Ansvarstagande</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>Språk</h3>
+
+                <ul>
+                    <li>Svenska (Modersmål)</li>
+                    <li>Engelska (Flytande)</li>
+                    <li>Turkiska (Flytande)</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <p class="section-label">Projekt</p>
+        <h2>Projekt</h2>
+
+        <article class="project-card">
+            <div>
+                <h3>Webshop med mikrotjänster</h3>
+
+                <p>
+                    Backend till en webshop byggd med mikrotjänstarkitektur. Systemet
+                    består av Auth-server, Product-service, Order-service och
+                    Email-service. Kommunikation sker via REST och RabbitMQ, JWT används
+                    för autentisering och PostgreSQL används för lagring.
+                </p>
+
+                <p>
+                    Mitt huvudansvar var Order-service där jag arbetade med orderlogik,
+                    kommunikation mot Product-service, JWT-vidarebefordran och
+                    RabbitMQ-integration.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>REST API</span>
+                <span>JWT</span>
+                <span>RabbitMQ</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+                <span>Render</span>
+            </div>
+        </article>
+    </section>
+
+    <section id="experience" class="section">
+        <p class="section-label">Arbetslivserfarenhet</p>
+        <h2>Arbetslivserfarenhet</h2>
+
+        <div class="timeline">
+            <article class="timeline-item">
+                <p class="date">2022 11 01 – 2023 07 03</p>
+                <h3>Avarn Security</h3>
+
+                <p>
+                    <strong>Tjänst:</strong> Stationär tjänst dag och natt på Shopping Center.
+                </p>
+
+                <p>
+                    <strong>Uppgifter:</strong> Låsning, upplåsning, brandlarmsåtgärd,
+                    personalservice, rapportering, åtgärd av andra avvikande
+                    påträffanden samt brottsförebyggning.
+                </p>
+            </article>
+
+            <article class="timeline-item">
+                <p class="date">2021 07 19 – 2022 11 30</p>
+                <h3>Tempest Security</h3>
+
+                <p>
+                    <strong>Tjänst:</strong> Stationär tjänst dagtid på ett större
+                    objekt i Södertälje, främst inom besöksmottagning, godsmottagning
+                    och vaccinationsmottagning under hög säsong för Covid-19 vaccination.
+                </p>
+
+                <p>
+                    <strong>Uppgifter:</strong> Leveranskontroll och dirigering,
+                    behörighetskontroll, hastighetskontroll inom området, rapportering,
+                    åtgärd av andra avvikande påträffanden samt brottsförebyggning.
+                </p>
+            </article>
+
+            <article class="timeline-item">
+                <p class="date">2016 05 06 – 2021 11 29</p>
+                <h3>Rapid Säkerhet</h3>
+
+                <p>
+                    <strong>Tjänst:</strong> Rondering, larmutryckning samt
+                    störningsjour. Endast nattetid.
+                </p>
+
+                <p>
+                    <strong>Uppgifter:</strong> Åtgärd av inbrottslarm
+                    (rörelsedetektor, magnetkontakt, glaskrossdetektor), kameralarm,
+                    brandlarm, överfallslarm, rapportering samt brottsförebyggning m.m.
+                </p>
+            </article>
+
+            <article class="timeline-item">
+                <p class="date">2015 06 13 – 2016 05 31</p>
+                <h3>Bevakningsgruppen Mälardalen</h3>
+
+                <p>
+                    <strong>Tjänst:</strong> Stationär tjänst dag och natt på objekt
+                    som Ica Maxi, handelsplatser samt eventer.
+                </p>
+
+                <p>
+                    <strong>Uppgifter:</strong> Låsning, upplåsning samt brottsförebyggning.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="cover-letter" class="section">
+        <p class="section-label">Personligt brev</p>
+        <h2>Personligt brev</h2>
+
+        <div class="text-card">
+            <p>Hej,</p>
+
+            <p>
+                Jag heter Yunus Uludag och studerar till Javautvecklare.
+                Jag söker nu en LIA-plats under perioden V46 2026 till V22 2027 där
+                jag får möjlighet att utvecklas praktiskt, lära mig av erfarna
+                utvecklare och få en bättre förståelse för hur arbetet fungerar i
+                verkliga projekt och team.
+            </p>
+
+            <p>
+                Under utbildningen har jag arbetat mycket praktiskt med programmering
+                och fått erfarenhet av bland annat Java, databaser, Git och
+                objektorienterad programmering. Jag tycker om problemlösning och
+                motiveras av att lära mig nya tekniker och utvecklas vidare inom IT.
+            </p>
+
+            <p>
+                Som person är jag engagerad, nyfiken och lätt att samarbeta med. Jag
+                tar ansvar för mitt arbete och trivs med att utvecklas genom nya
+                utmaningar. Även om mitt fokus hittills har varit Java är jag öppen
+                och motiverad att lära mig andra programmeringsspråk och tekniker.
+            </p>
+
+            <p>
+                För mig är LIA en viktig möjlighet att både växa som utvecklare och
+                bidra med mitt driv och intresse för programmering.
+            </p>
+
+            <p>
+                Jag ser fram emot att höra från er och få möjligheten att lära känna
+                verksamheten och utvecklas tillsammans med er.
+            </p>
+
+            <p>
+                Med vänliga hälsningar,<br/>
+                Yunus Uludag
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <p class="section-label">Kontaktinformation</p>
+        <h2>Kontakt</h2>
+
+        <div class="contact-grid">
+            <a href="mailto:yunus.uludag@iths.se">yunus.uludag@iths.se</a>
+            <a href="https://www.linkedin.com/in/ynsuldg" target="_blank">
+                www.linkedin.com/in/ynsuldg
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Yunus Uludag</p>
+</footer>
+</body>
+</html>
