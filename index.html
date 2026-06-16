@@ -192,19 +192,53 @@
 
         <article class="project-card">
             <div>
-                <h3>Two-Factor Authentication System</h3>
+                <h3>Google Gemini AI-integration</h3>
 
                 <p>
-                    Säker autentiseringsapplikation byggd med Spring Boot och Spring Security.
-                    Användare kan registrera sig, aktivera tvåfaktorsautentisering och logga
-                    in med både lösenord och tidsbaserad engångskod från Microsoft
-                    Authenticator eller Google Authenticator.
+                    Webbapplikation utvecklad med Spring Boot och integrerad mot Google Gemini
+                    via ett REST API. Användaren kan ställa frågor genom ett webbgränssnitt
+                    och få AI-genererade svar i realtid.
                 </p>
 
                 <p>
-                    Projektet använder PostgreSQL för lagring av användare och hemliga nycklar.
-                    QR-koder genereras automatiskt för enkel koppling mot authenticator-appar
-                    och åtkomst till skyddade sidor kräver både inloggning och verifierad MFA.
+                    Lösningen använder Thymeleaf för frontend, PostgreSQL för datalagring
+                    och Spring Data JPA för databasåtkomst. Varje fråga och svar sparas i
+                    databasen och visas i en historikvy. Integrationen mot Gemini
+                    implementerades manuellt med HTTP-anrop och JSON-data för att ge en
+                    djupare förståelse för API-kommunikation och externa tjänster.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>REST API</span>
+                <span>JSON</span>
+                <span>Google Gemini</span>
+                <span>PostgreSQL</span>
+                <span>Spring Data JPA</span>
+                <span>Thymeleaf</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Tvåfaktorsautentisering med Authenticator-app</h3>
+
+                <p>
+                    Separat projekt där jag byggde ett säkert inloggningsflöde med
+                    Spring Boot och Spring Security. Användaren kan registrera sig,
+                    välja om tvåfaktorsautentisering ska aktiveras och därefter logga
+                    in med lösenord samt en tidsbaserad kod från Microsoft Authenticator
+                    eller Google Authenticator.
+                </p>
+
+                <p>
+                    Projektet genererar en hemlig nyckel som sparas i PostgreSQL och
+                    bäddas in i en QR-kod som kan scannas av en authenticator-app.
+                    Skyddade sidor kräver både lyckad inloggning och verifierad MFA-kod.
                 </p>
             </div>
 
@@ -215,26 +249,28 @@
                 <span>PostgreSQL</span>
                 <span>2FA</span>
                 <span>MFA</span>
+                <span>TOTP</span>
+                <span>QR Code</span>
                 <span>Thymeleaf</span>
             </div>
         </article>
 
         <article class="project-card">
             <div>
-                <h3>Secure Webshop</h3>
+                <h3>Säker webshop</h3>
 
                 <p>
-                    Webbshop byggd med Spring Boot där fokus låg på säkerhet,
-                    användarhantering och GDPR-anpassning. Systemet innehåller
-                    registrering, inloggning, profilhantering, kundvagn,
-                    orderhantering och administratörsfunktioner.
+                    Säker webshop med Spring Boot.
+                    Systemet innehåller registrering, inloggning, produktkatalog,
+                    kundvagn, orderhantering, profilsida, GDPR-anpassad cookiehantering
+                    och administratörsfunktioner. Orderbekräftelser skickas via en separat
+                    Message Service som ansvarar för e-postutskick.
                 </p>
 
                 <p>
-                    Säkerheten implementerades med Spring Security, BCrypt,
-                    sessionshantering och CSRF-skydd. Projektet distribuerades
-                    med Docker till Render och använder PostgreSQL för lagring
-                    av användare, produkter och ordrar.
+                    Mitt huvudansvar var produktdelen där jag arbetade med Product-entity,
+                    ProductRepository, ProductService, produktsidan, adminfunktion för att
+                    skapa produkter samt tester mot både H2-databas och mockat repository.
                 </p>
             </div>
 
@@ -243,12 +279,92 @@
                 <span>Spring Boot</span>
                 <span>Spring Security</span>
                 <span>PostgreSQL</span>
+                <span>Thymeleaf</span>
                 <span>Docker</span>
                 <span>Render</span>
+                <span>Message Service</span>
                 <span>GDPR</span>
-                <span>Thymeleaf</span>
+                <span>Testing</span>
             </div>
         </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Realtidschatt med Jakarta EE och WebSocket</h3>
+
+                <p>
+                    Webbapplikation byggd med Jakarta EE och WebSocket för användarhantering
+                    och realtidskommunikation. Systemet innehåller registrering av användare,
+                    inloggning, sessionshantering, datalagring i PostgreSQL samt en chatt där
+                    anslutna användare kan skicka och ta emot meddelanden i realtid.
+                </p>
+
+                <p>
+                    Jag utvecklade användarflödet från registrering till inloggning med JSF,
+                    CDI och JPA. Lösningen inkluderar AppUser-entity, service- och repositorylager,
+                    sessionhantering med SessionScoped beans samt integration mellan Jakarta EE-applikationen
+                    och en separat WebSocket-server för realtidskommunikation mellan klienter.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Jakarta EE</span>
+                <span>JSF</span>
+                <span>CDI</span>
+                <span>JPA</span>
+                <span>WebSocket</span>
+                <span>PostgreSQL</span>
+                <span>Session Management</span>
+                <span>Maven</span>
+                <span>MVC</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>JavaTools – CRUD-system med Spring Boot, Docker och CI/CD</h3>
+                
+                <p>
+                    Grupprojekt utvecklat med Spring Boot för hantering av resurserna Drink,
+                    Food, Pizza och Spirit. Applikationen följer MVC-arkitektur och erbjuder
+                    full CRUD-funktionalitet med PostgreSQL som databas samt Thymeleaf för
+                    det webbaserade användargränssnittet.
+                </p>
+
+                <p>
+                    Jag ansvarade för hela Drink-modulen, inklusive entity, controller,
+                    service-, repository- och validatorlager, egna exceptions, Thymeleaf-vyer
+                    samt enhets- och integrationstester. Jag skapade även Docker-konfiguration,
+                    byggde Docker-image och driftsatte applikationen på Render. Som individuellt
+                    vidarearbete implementerade jag Jenkins för Continuous Integration,
+                    Logback-baserad loggning samt integrationstester med MockMvc och H2-databas
+                    för att verifiera applikationens flöde från HTTP-anrop till databas.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring MVC</span>
+                <span>Spring Data JPA</span>
+                <span>Hibernate</span>
+                <span>Thymeleaf</span>
+                <span>PostgreSQL</span>
+                <span>H2</span>
+                <span>JUnit 5</span>
+                <span>Mockito</span>
+                <span>MockMvc</span>
+                <span>Docker</span>
+                <span>Render</span>
+                <span>Jenkins</span>
+                <span>CI/CD</span>
+                <span>Logback</span>
+                <span>Maven</span>
+                <span>MVC</span>
+            </div>
+        </article>
+
     </section>
 
     <section id="experience" class="section">
